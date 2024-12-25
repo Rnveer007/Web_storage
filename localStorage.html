@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <div id="wrapper">
+        <button id="saveData"> Save Data</button>
+        <button id="showData"> Show Data</button>
+    </div>
+
+
+
+    <script>
+        // Local storage? :- Local storage is a web storage mechanism that allows to devloperss to store the data in user's browser persistently as key - value pair. Data in local storage does not expire and remains availble even after the browser is closed and reopned;
+
+        // difference btw local and session storage :- 
+        // Local storage persist data independently (or until user manually delete it).
+        // session storage persist data only for the duration of the tab or browser session.
+
+
+
+
+
+
+        // store and retrieve the data ...
+
+        // let save = document.getElementById("saveData");
+        // let show = document.getElementById("showData");
+
+
+        // save.addEventListener('click', dataSave);
+
+        // function dataSave(){
+        //     localStorage.setItem("Greeting", "Hello, Ranveer");
+        //     alert("Data saved");
+        // };
+
+        // show.addEventListener("click", dataShow);
+
+        // function dataShow(){
+        //     let data = localStorage.getItem("greeting");
+        //     alert("Your Data");
+        // }
+
+
+        // Note :- both storages can only store strings directly. to store object and array we have to convert them into a string using JSON.stringify(). And To retrieve and use the data convert it back by using JSON.parse().
+
+        // Example :- 
+        // storing an object
+        // let user  = { Name : "Ranveer" , City: "Jaipur", class: "FSL", profession : "Devloper" };
+        // localStorage.setItem("user", JSON.stringify(user));
+
+        // retrieve object 
+        // let storedUserData = JSON.parse(localStorage.getItem("user"));
+        // console.log(storedUserData);
+
+        // console.log(localStorage.length);
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

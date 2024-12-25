@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples of local storage and session storage</title>
+</head>
+
+<body>
+    <div id="wrapper">Local storage And Session storage</div>
+
+
+
+    <script>
+
+        // Local Storage:- 
+
+        // localStorage.setItem("name", "Ranveer");
+        // localStorage.setItem("city", "Jaipur");
+        // localStorage.setItem("profession", "devloper")
+
+        // let name = localStorage.getItem("name");
+        // let city = localStorage.getItem("city")
+        // let work = localStorage.getItem("profession")
+        // //  console.log(localStorage.length);
+        // // console.log("city")
+
+        // // remove item 
+        // localStorage.removeItem("city");
+
+
+        // Session Storage :- 
+        // Store data 
+        //     sessionStorage.setItem ("name", "Ranveer");
+        //     sessionStorage.setItem("profession", "Devloper")
+
+        //     // retrieve data
+        //     let name = sessionStorage.getItem("name");
+        //     let work = sessionStorage.getItem("profession");
+
+        //     // sessionStorage.clear();
+
+        //     if(typeof(storage) !== "undefined" && typeof (sessionStorage) !== "undefined")
+        //     {
+        //   console.log("The browser is supporting this storage");
+        //     }else{
+        //         console.log("the browser does not supportig this storage type");
+        //     }
+
+
+        // const user = { name: "Ranveer", city: "Jaipur", profession: "Devloper" };
+
+        // // convert obj into string and store
+        // localStorage.setItem("userDetails", JSON.stringify(user));
+        // // retrieve obj and parse it
+        // let storedData = JSON.parse(localStorage.getItem("userDetails"))
+        // localStorage.clear()
+
+
+        // let colours = [ "Red", "Blue", "Balck","Purple"];
+
+        // localStorage.setItem("ColoursItem", JSON.stringify(colours));
+
+        // // retrieve arry and parse it
+        // let storedColors = JSON.parse(localStorage.getItem("ColoursItem"));
+
+        // console.log(storedColors);
+       
+
+
+    </script>
+</body>
+
+</html>

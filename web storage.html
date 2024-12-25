@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+
+    <div id="wrapper">Web Storage</div>
+
+
+    
+
+    <script>
+        // there are two type of web storage first one is local storage and second one is session storage. both storage allow developers to storage the data in user's browser.
+        // difference :-
+        // but there is a diffrence between both of them like -
+        // in local storage data will be availble and does not expire even after we close the tab or session. we have to delete the data manually ...
+        // but in other hand in session storage data will be availble only the duration of the tab and browser session.
+        
+        
+
+        // local storage example :- 
+        localStorage.setItem("name" , "Ranveer");
+       localStorage.setItem("city", "Jaipur");
+    //     localStorage.setItem("profession", "Devloper");
+
+        console.log(localStorage.getItem("city"));
+        // localStorage.removeItem("city");
+        // localStorage.clear();
+        
+
+        // check is browser supporting the browser
+
+        // if(typeof localStorage !== "undefined"){
+        //     console.log("browser is supporing the local storage");
+        // }else{
+        //     console.log("browser is not supprting the local Storage");
+        // }
+
+
+
+        let user = {
+            name  : "Ranveer",
+            city  : "Jaipur",
+            profession : "Devloper"
+        };
+
+        // // convert into string and store ...
+        localStorage.setItem("userDetails" , JSON.stringify(user));
+   
+        // // get it by using parse.... 
+        let storedDetials = (JSON.parse(localStorage.getItem("userDetails")));
+        console.log(storedDetials);
+
+
+        let colors = ["Black","Red", "Yellow", "Purple"];
+
+        sessionStorage.setItem("favColors", JSON.stringify(colors));
+
+        let storedColors = JSON.parse(sessionStorage.getItem("favColors"));
+        console.log(storedColors);
+
+        
+
+        // sessionStorage.setItem("Name", "Ranveer");
+        // sessionStorage.setItem("city", "Jaipur");
+
+        // console.log(sessionStorage.getItem("Name"))
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
